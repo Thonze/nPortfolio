@@ -1,0 +1,57 @@
+<%- include ('./partials/header') %> 
+
+  <!-- ACTIONS -->
+  <section id="action" class="py-4 mb-4 bg-light">
+    <div class="container">
+      <div class="row">
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LOGIN -->
+  <section id="login">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="card">
+            <div class="card-header">
+              <h4>Admin Login</h4>
+            </div>
+            <div class="card-body">
+              <form action="/login" method="post">
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="text" name="email" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" name="password" class="form-control">
+                </div>
+                <div class="form-group">
+                  <button type="submit">Login</button>
+                </div>
+                <!-- <a href="/admin" class="btn btn-primary">login</a> -->
+                <!-- <input type="submit" class="btn btn-primary btn-block" value="Login"> -->
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://cdn.ckeditor.com/4.7.1/standard/ckeditor.js"></script>
+  <script>
+      CKEDITOR.replace( 'editor1' );
+  </script>
+</body>
+</html>
+
+
+
+<%- include ('./partials/footer') %> 
